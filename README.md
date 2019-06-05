@@ -1,4 +1,4 @@
-# WooKey Mainboard PCB
+# LEIA PCB
 
 ![Pinout](./imgs/leia-motherboard-3D.png)
 
