@@ -1,4 +1,4 @@
-# WooKey Mainboard PCB
+# WooKey Mainboard PCB
 
 ![Pinout](./imgs/leia-motherboard-3D.png)
 
@@ -19,8 +19,7 @@ This repository is aimed towards developers.
 
 This directory contains the hardware design for the Leia board, first public version (Leia V2).
 
-
-### PCB editing tools
+### PCB editing tools
 
 All PCB files (schematic and PCB layout) have been designed using the KiCad EDA.
 This Cross Platform and Open Source Electronics Design Automation Suite can be downloaded
