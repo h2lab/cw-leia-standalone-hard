@@ -160,8 +160,6 @@ Wire Wire Line
 Connection ~ 3650 8450
 Text Label 9150 8650 2    60   ~ 0
 CRD_PWR
-NoConn ~ 12450 4900
-NoConn ~ 13350 4900
 Wire Wire Line
 	13950 5200 13950 5700
 Wire Wire Line
@@ -493,8 +491,6 @@ Wire Wire Line
 	5750 3750 6350 3750
 Wire Wire Line
 	10800 4700 12450 4700
-Wire Wire Line
-	13350 4700 15150 4700
 $Comp
 L Connector:Conn_Coaxial J1706
 U 1 1 5C32B7A4
@@ -1017,17 +1013,6 @@ Wire Wire Line
 	2500 3550 4650 3550
 Wire Wire Line
 	3650 6850 4650 6850
-$Comp
-L power:VDDA #PWR0118
-U 1 1 5CAA88D4
-P 7650 4650
-F 0 "#PWR0118" H 7650 4500 50  0001 C CNN
-F 1 "VDDA" H 7667 4823 50  0000 C CNN
-F 2 "" H 7650 4650 50  0001 C CNN
-F 3 "" H 7650 4650 50  0001 C CNN
-	1    7650 4650
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R_Small R1306
 U 1 1 5CAD467F
@@ -1629,7 +1614,7 @@ Wire Wire Line
 Wire Wire Line
 	7650 5450 7650 5600
 Wire Wire Line
-	7650 5200 9100 5200
+	7650 5200 7850 5200
 Wire Wire Line
 	7650 5150 7650 5200
 Connection ~ 7650 5200
@@ -1841,4 +1826,124 @@ Text Notes 8000 8550 0    50   ~ 0
 D
 Text Notes 8000 8200 0    50   ~ 0
 S
+Wire Wire Line
+	13350 4700 14550 4700
+$Comp
+L Connector:TestPoint_Alt TP3003
+U 1 1 5D081D31
+P 14550 4550
+AR Path="/5B19B7B2/5D081D31" Ref="TP3003"  Part="1" 
+AR Path="/5CD07BF2/5D081D31" Ref="TP?"  Part="1" 
+AR Path="/5D081D31" Ref="TP?"  Part="1" 
+AR Path="/5CBC3017/5D081D31" Ref="TP?"  Part="1" 
+F 0 "TP3003" H 14608 4668 50  0000 L CNN
+F 1 "VPP" H 14608 4577 50  0000 L CNN
+F 2 "TestPoint_Keystone_5000-5004_Miniature" H 14750 4550 50  0001 C CNN
+F 3 "~" H 14750 4550 50  0001 C CNN
+F 4 "KEYSTONE" H 10550 7250 50  0001 C CNN "MFG Name"
+F 5 "5001" H 10550 7250 50  0001 C CNN "MFG Part Num"
+F 6 "Farnell" H 10550 7250 50  0001 C CNN "Distrib Name"
+F 7 "Farnell" H 4750 100 50  0001 C CNN "Distrib"
+F 8 "http://fr.farnell.com/c-k-components/ksr231g-lfs/tactile-commutateur-miniature/dp/1201422" H 4750 100 50  0001 C CNN "Distrib Link"
+F 9 "2301278" H 4750 100 50  0001 C CNN "Distrib PN"
+F 10 "5001" H 4750 100 50  0001 C CNN "Mouser Price/Stock"
+	1    14550 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14550 4550 14550 4700
+Connection ~ 14550 4700
+Wire Wire Line
+	14550 4700 15150 4700
+$Comp
+L Connector:TestPoint_Alt TP3002
+U 1 1 5D0C6C9F
+P 11300 4900
+AR Path="/5B19B7B2/5D0C6C9F" Ref="TP3002"  Part="1" 
+AR Path="/5CD07BF2/5D0C6C9F" Ref="TP?"  Part="1" 
+AR Path="/5D0C6C9F" Ref="TP?"  Part="1" 
+AR Path="/5CBC3017/5D0C6C9F" Ref="TP?"  Part="1" 
+F 0 "TP3002" V 11300 5200 50  0000 L CNN
+F 1 "C4" V 11200 5200 50  0000 L CNN
+F 2 "TestPoint_Keystone_5000-5004_Miniature" H 11500 4900 50  0001 C CNN
+F 3 "~" H 11500 4900 50  0001 C CNN
+F 4 "KEYSTONE" H 7300 7600 50  0001 C CNN "MFG Name"
+F 5 "5001" H 7300 7600 50  0001 C CNN "MFG Part Num"
+F 6 "Farnell" H 7300 7600 50  0001 C CNN "Distrib Name"
+F 7 "Farnell" H 1500 450 50  0001 C CNN "Distrib"
+F 8 "http://fr.farnell.com/c-k-components/ksr231g-lfs/tactile-commutateur-miniature/dp/1201422" H 1500 450 50  0001 C CNN "Distrib Link"
+F 9 "2301278" H 1500 450 50  0001 C CNN "Distrib PN"
+F 10 "5001" H 1500 450 50  0001 C CNN "Mouser Price/Stock"
+	1    11300 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint_Alt TP3004
+U 1 1 5D0C7BBC
+P 15000 4900
+AR Path="/5B19B7B2/5D0C7BBC" Ref="TP3004"  Part="1" 
+AR Path="/5CD07BF2/5D0C7BBC" Ref="TP?"  Part="1" 
+AR Path="/5D0C7BBC" Ref="TP?"  Part="1" 
+AR Path="/5CBC3017/5D0C7BBC" Ref="TP?"  Part="1" 
+F 0 "TP3004" V 15150 4900 50  0000 L CNN
+F 1 "C8" V 15058 4927 50  0000 L CNN
+F 2 "TestPoint_Keystone_5000-5004_Miniature" H 15200 4900 50  0001 C CNN
+F 3 "~" H 15200 4900 50  0001 C CNN
+F 4 "KEYSTONE" H 11000 7600 50  0001 C CNN "MFG Name"
+F 5 "5001" H 11000 7600 50  0001 C CNN "MFG Part Num"
+F 6 "Farnell" H 11000 7600 50  0001 C CNN "Distrib Name"
+F 7 "Farnell" H 5200 450 50  0001 C CNN "Distrib"
+F 8 "http://fr.farnell.com/c-k-components/ksr231g-lfs/tactile-commutateur-miniature/dp/1201422" H 5200 450 50  0001 C CNN "Distrib Link"
+F 9 "2301278" H 5200 450 50  0001 C CNN "Distrib PN"
+F 10 "5001" H 5200 450 50  0001 C CNN "Mouser Price/Stock"
+	1    15000 4900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11300 4900 12450 4900
+Wire Wire Line
+	13350 4900 15000 4900
+$Comp
+L Connector:TestPoint_Alt TP3001
+U 1 1 5CFCA9D3
+P 7650 4650
+AR Path="/5B19B7B2/5CFCA9D3" Ref="TP3001"  Part="1" 
+AR Path="/5CD07BF2/5CFCA9D3" Ref="TP?"  Part="1" 
+AR Path="/5CFCA9D3" Ref="TP?"  Part="1" 
+AR Path="/5CBC3017/5CFCA9D3" Ref="TP?"  Part="1" 
+F 0 "TP3001" H 7700 4800 50  0000 L CNN
+F 1 "VPP" H 7700 4900 50  0000 L CNN
+F 2 "TestPoint_Keystone_5000-5004_Miniature" H 7850 4650 50  0001 C CNN
+F 3 "~" H 7850 4650 50  0001 C CNN
+F 4 "KEYSTONE" H 3650 7350 50  0001 C CNN "MFG Name"
+F 5 "5001" H 3650 7350 50  0001 C CNN "MFG Part Num"
+F 6 "Farnell" H 3650 7350 50  0001 C CNN "Distrib Name"
+F 7 "Farnell" H -2150 200 50  0001 C CNN "Distrib"
+F 8 "http://fr.farnell.com/c-k-components/ksr231g-lfs/tactile-commutateur-miniature/dp/1201422" H -2150 200 50  0001 C CNN "Distrib Link"
+F 9 "2301278" H -2150 200 50  0001 C CNN "Distrib PN"
+F 10 "5001" H -2150 200 50  0001 C CNN "Mouser Price/Stock"
+	1    7650 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP?
+U 1 1 5CFDED16
+P 7950 5200
+AR Path="/5B22B7CD/5CFDED16" Ref="JP?"  Part="1" 
+AR Path="/5B19B7B2/5CFDED16" Ref="JP3001"  Part="1" 
+AR Path="/5CBC3017/5B19B7B2/5CFDED16" Ref="JP?"  Part="1" 
+F 0 "JP3001" H 8000 5300 50  0000 L CNN
+F 1 "VPP" H 8000 5150 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7950 5200 50  0001 C CNN
+F 3 "~" H 7950 5200 50  0001 C CNN
+F 4 "Molex" V 7950 5200 50  0001 C CNN "MFG Name"
+F 5 "90120-0762" V 7950 5200 50  0001 C CNN "MFG Part Num"
+F 6 "2751456" V 7950 5200 50  0001 C CNN "Distrib PN"
+F 7 "Farnell" V 7950 5200 50  0001 C CNN "Distrib"
+F 8 "Farnell" H 1350 -2700 50  0001 C CNN "Distrib Name"
+	1    7950 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 5200 9100 5200
 $EndSCHEMATC

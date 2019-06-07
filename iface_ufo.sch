@@ -22,8 +22,6 @@ Text HLabel 3650 7600 0    50   Input ~ 0
 RX
 Text HLabel 3650 7500 0    50   Output ~ 0
 TX
-Text HLabel 4400 6400 0    50   UnSpc ~ 0
-ALIM_READER
 Wire Wire Line
 	3650 7600 4750 7600
 Wire Wire Line
@@ -45,7 +43,7 @@ CW308_3.3
 Text Label 14300 7500 0    50   ~ 0
 CW308_5.0
 Wire Wire Line
-	10600 8000 8350 8000
+	10600 8000 10050 8000
 NoConn ~ 12300 8850
 NoConn ~ 12400 8850
 NoConn ~ 12500 8850
@@ -72,17 +70,6 @@ Text HLabel 4450 6600 0    50   UnSpc ~ 0
 TARGET_GND
 Wire Wire Line
 	4450 6600 4700 6600
-$Comp
-L leia-rescue:GND #PWR0122
-U 1 1 5C4D696F
-P 13700 10400
-F 0 "#PWR0122" H 13700 10150 50  0001 C CNN
-F 1 "GND" H 13700 10250 50  0000 C CNN
-F 2 "" H 13700 10400 60  0000 C CNN
-F 3 "" H 13700 10400 60  0000 C CNN
-	1    13700 10400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	11700 5150 11100 5150
 Wire Wire Line
@@ -128,13 +115,10 @@ F 3 "" H 4700 6750 50  0001 C CNN
 	1    4700 6750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	13700 7700 13700 10400
 NoConn ~ 11700 8850
 NoConn ~ 11800 8850
 NoConn ~ 12000 8850
 NoConn ~ 12200 8850
-NoConn ~ 10600 7600
 NoConn ~ 10600 7500
 NoConn ~ 10600 6400
 NoConn ~ 10600 6200
@@ -147,8 +131,6 @@ NoConn ~ 13100 7000
 NoConn ~ 13100 7600
 Wire Wire Line
 	13100 7400 14300 7400
-Wire Wire Line
-	13100 7700 13700 7700
 $Comp
 L wisp:CW308_TARGETCON J6000
 U 1 1 5C2850A5
@@ -219,8 +201,6 @@ Wire Wire Line
 	11100 5250 11700 5250
 NoConn ~ 11700 5350
 Wire Wire Line
-	4400 6400 4700 6400
-Wire Wire Line
 	10600 6700 8300 6700
 Wire Wire Line
 	10600 6800 8300 6800
@@ -228,19 +208,14 @@ Text Label 8300 6700 0    50   ~ 0
 TX
 Text Label 8300 6800 0    50   ~ 0
 RX
-Text Label 8350 8000 0    50   ~ 0
-VREF
 Text Label 4750 7700 0    50   ~ 0
 VREF
-Text HLabel 3650 7700 0    50   Output ~ 0
+Text HLabel 3650 7700 0    50   Input ~ 0
 VREF
 Wire Wire Line
 	3650 7700 4750 7700
 Wire Wire Line
 	13050 4000 13050 4850
-Wire Wire Line
-	4700 6400 4700 6300
-Connection ~ 4700 6300
 Wire Wire Line
 	4700 6300 4700 6150
 $Comp
@@ -277,4 +252,37 @@ NoConn ~ 12100 8850
 NoConn ~ 13100 6200
 NoConn ~ 13100 6300
 NoConn ~ 10900 8850
+Wire Wire Line
+	10600 7600 10050 7600
+$Comp
+L leia-rescue:GND #PWR0118
+U 1 1 5D03631E
+P 13650 7800
+F 0 "#PWR0118" H 13650 7550 50  0001 C CNN
+F 1 "GND" H 13650 7650 50  0000 C CNN
+F 2 "" H 13650 7800 60  0000 C CNN
+F 3 "" H 13650 7800 60  0000 C CNN
+	1    13650 7800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 7800 4750 7800
+Text Label 4750 7800 0    50   ~ 0
+VDD_UART
+Wire Wire Line
+	13100 7700 13650 7700
+Wire Wire Line
+	13650 7700 13650 7800
+Text HLabel 3650 7800 0    50   Input ~ 0
+VDD_UART
+Text HLabel 3650 7900 0    50   Input ~ 0
+GND_UART
+Text Label 4750 7900 0    50   ~ 0
+GND_UART
+Wire Wire Line
+	3650 7900 4750 7900
+Text Label 10050 7600 0    50   ~ 0
+GND_UART
+Text Label 10050 8000 0    50   ~ 0
+VDD_UART
 $EndSCHEMATC
