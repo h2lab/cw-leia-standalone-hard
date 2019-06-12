@@ -87,31 +87,11 @@ Wire Wire Line
 Wire Wire Line
 	7050 1200 6300 1200
 Wire Wire Line
-	7300 10250 7350 10250
-Wire Wire Line
 	7550 1400 7900 1400
 Connection ~ 7900 1400
 Wire Wire Line
 	7900 1400 7900 1300
-$Comp
-L Connector_Generic:Conn_02x03_Odd_Even J1002
-U 1 1 5C3ABCFD
-P 7100 10250
-F 0 "J1002" H 7150 10567 50  0000 C CNN
-F 1 "READER_GND" H 7150 10476 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 7100 10250 50  0001 C CNN
-F 3 "~" H 7100 10250 50  0001 C CNN
-F 4 "Molex" H 6650 8200 50  0001 C CNN "MFG Name"
-F 5 "90131-0763" H 6650 8200 50  0001 C CNN "MFG Part Num"
-F 6 "Farnell" H 6650 8200 50  0001 C CNN "Distrib Name"
-F 7 "Farnell" H 850 1050 50  0001 C CNN "Distrib"
-F 8 "9733574" H 850 1050 50  0001 C CNN "Distrib PN"
-	1    7100 10250
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	7300 10350 7350 10350
-Text Label 6050 10350 0    50   ~ 0
+Text Label 6050 10250 0    50   ~ 0
 EXT_READER_GND
 Wire Wire Line
 	7050 1400 6400 1400
@@ -119,8 +99,6 @@ Text Label 6400 1400 0    50   ~ 0
 EXT_READER_VCC
 Text Label 6400 1200 0    50   ~ 0
 USB_READER_VCC
-Text Label 6050 10150 0    50   ~ 0
-USB_READER_GND
 $Comp
 L Connector:Conn_Coaxial J6
 U 1 1 5C3E3023
@@ -173,8 +151,6 @@ Text Label 15300 7350 2    50   ~ 0
 CW_GND
 Wire Wire Line
 	14850 7350 15300 7350
-Wire Wire Line
-	7350 10350 7350 10250
 Connection ~ 7350 10250
 Text Label 6800 4250 2    50   ~ 0
 USB_READER_GND
@@ -214,10 +190,6 @@ F14 "SHUNT_L" U R 6050 7250 50
 $EndSheet
 Wire Wire Line
 	6050 6800 8150 6800
-Wire Wire Line
-	6050 10350 6800 10350
-Wire Wire Line
-	6050 10150 6800 10150
 $Comp
 L Connector:TestPoint_Alt TP1001
 U 1 1 5C60DB03
@@ -507,9 +479,9 @@ Wire Wire Line
 Wire Wire Line
 	12750 3750 13000 3750
 Wire Wire Line
-	15350 3950 15650 3950
+	15350 3950 15400 3950
 Wire Wire Line
-	15350 3650 15650 3650
+	15350 3650 15400 3650
 Wire Wire Line
 	15350 3750 15500 3750
 Wire Wire Line
@@ -519,8 +491,6 @@ Since LEIA embed an SMA for the shunt resistor,\nwe do not need to connect SHUNT
 Text Notes 6100 4750 0    50   ~ 0
 VDDD and GNDD are connected to \noptocouplers reader side
 Text Notes 3800 8050 0    50   ~ 0
-User can choose between external \npower supply or CW power supply.
-Text Notes 6050 10650 0    50   ~ 0
 User can choose between external \npower supply or CW power supply.
 Text Notes 6350 800  0    50   ~ 0
 User can choose between external \npower supply or CW power supply.
@@ -990,11 +960,6 @@ Wire Wire Line
 Wire Wire Line
 	6300 7450 6300 7350
 Wire Wire Line
-	7300 10150 7350 10150
-Wire Wire Line
-	7350 10150 7350 10250
-NoConn ~ 6800 10250
-Wire Wire Line
 	6300 1200 6300 1550
 Wire Wire Line
 	7550 1300 7900 1300
@@ -1099,4 +1064,56 @@ Wire Wire Line
 	14850 6200 15050 6200
 Wire Wire Line
 	14850 6300 15050 6300
+Wire Wire Line
+	7350 10100 6050 10100
+Text Label 6050 10100 0    50   ~ 0
+USB_READER_GND
+Wire Wire Line
+	7350 10100 7350 10250
+Wire Wire Line
+	6050 10250 7350 10250
+$Comp
+L power:GNDA #PWR?
+U 1 1 5D0CC0F2
+P 15400 4450
+AR Path="/5B19B7B2/5D0CC0F2" Ref="#PWR?"  Part="1" 
+AR Path="/5CD07BF2/5D0CC0F2" Ref="#PWR?"  Part="1" 
+AR Path="/5D0CC0F2" Ref="#PWR0154"  Part="1" 
+AR Path="/5CBC3017/5D0CC0F2" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0154" H 15400 4200 50  0001 C CNN
+F 1 "GNDA" H 15405 4277 50  0000 C CNN
+F 2 "" H 15400 4450 50  0001 C CNN
+F 3 "" H 15400 4450 50  0001 C CNN
+	1    15400 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15400 4450 15400 3950
+Connection ~ 15400 3950
+Wire Wire Line
+	15400 3950 15650 3950
+$Comp
+L power:VDDA #PWR?
+U 1 1 5D0D488A
+P 15400 3400
+AR Path="/5B19B7B2/5D0D488A" Ref="#PWR?"  Part="1" 
+AR Path="/5CD07BF2/5D0D488A" Ref="#PWR?"  Part="1" 
+AR Path="/5D0D488A" Ref="#PWR?"  Part="1" 
+AR Path="/5CBC3017/5D0D488A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 15400 3250 50  0001 C CNN
+F 1 "VDDA" H 15400 3600 50  0000 C CNN
+F 2 "" H 15400 3400 50  0001 C CNN
+F 3 "" H 15400 3400 50  0001 C CNN
+F 4 "" H 10950 7300 50  0001 C CNN "MFG Name"
+F 5 "" H 10950 7300 50  0001 C CNN "MFG Part Num"
+F 6 "" H 10950 7300 50  0001 C CNN "Distrib Name"
+F 7 "" H 10950 7300 50  0001 C CNN "Distrib Part Num"
+	1    15400 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15400 3400 15400 3650
+Connection ~ 15400 3650
+Wire Wire Line
+	15400 3650 15650 3650
 $EndSCHEMATC

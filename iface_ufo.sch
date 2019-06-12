@@ -42,8 +42,6 @@ Text Label 14300 7400 0    50   ~ 0
 CW308_3.3
 Text Label 14300 7500 0    50   ~ 0
 CW308_5.0
-Wire Wire Line
-	10600 8000 10050 8000
 NoConn ~ 12300 8850
 NoConn ~ 12400 8850
 NoConn ~ 12500 8850
@@ -266,23 +264,19 @@ F 3 "" H 13650 7800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3650 7800 4750 7800
-Text Label 4750 7800 0    50   ~ 0
-VDD_UART
-Wire Wire Line
 	13100 7700 13650 7700
 Wire Wire Line
 	13650 7700 13650 7800
-Text HLabel 3650 7800 0    50   Input ~ 0
-VDD_UART
 Text HLabel 3650 7900 0    50   Input ~ 0
 GND_UART
 Text Label 4750 7900 0    50   ~ 0
 GND_UART
 Wire Wire Line
 	3650 7900 4750 7900
+Text Label 10050 8000 0    50   ~ 0
+VREF
+Wire Wire Line
+	10600 8000 10050 8000
 Text Label 10050 7600 0    50   ~ 0
 GND_UART
-Text Label 10050 8000 0    50   ~ 0
-VDD_UART
 $EndSCHEMATC
