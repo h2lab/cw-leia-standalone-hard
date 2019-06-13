@@ -14,25 +14,6 @@ Comment2 "LICENCE: CERN Open Hardware Licence v1.2"
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Device:R_Small R104
-U 1 1 557FEF49
-P 1450 5650
-F 0 "R104" V 1530 5650 50  0000 C CNN
-F 1 "470" V 1450 5650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1380 5650 30  0001 C CNN
-F 3 "" H 1450 5650 30  0000 C CNN
-F 4 "Farnell" H 0   0   50  0001 C CNN "Distrib"
-F 5 "Farnell" H 0   0   50  0001 C CNN "Distrib Name"
-F 6 "1469815" H 0   0   50  0001 C CNN "Distrib PN"
-F 7 "1469815" H 0   0   50  0001 C CNN "Distrib Part Num"
-F 8 "Vishay" H 0   0   50  0001 C CNN "MFG Name"
-F 9 "CRCW0603470RFKEA" H 0   0   50  0001 C CNN "MFG Part Num"
-	1    1450 5650
-	1    0    0    -1  
-$EndComp
-Text Label 1550 4950 0    60   ~ 0
-BOOT0
 Text Label 1550 4750 0    60   ~ 0
 BOOT1
 $Comp
@@ -260,8 +241,6 @@ F 9 "Farnell" H 0   0   50  0001 C CNN "Distrib Name"
 	1    11200 11400
 	1    0    0    -1  
 $EndComp
-Text Label 8850 5750 0    60   ~ 0
-BOOT0
 Text Label 8850 9300 0    60   ~ 0
 BOOT1
 $Comp
@@ -436,7 +415,6 @@ Text Label -16800 27400 0    81   ~ 0
 ear
 NoConn ~ 12600 6300
 NoConn ~ 12600 6400
-NoConn ~ 12600 6500
 NoConn ~ 9650 6500
 $Comp
 L Connector_Generic:Conn_01x03 P592
@@ -458,40 +436,40 @@ $EndComp
 $Comp
 L Switch:SW_Push SW503
 U 1 1 58BDB2DF
-P 5200 4500
-F 0 "SW503" H 5350 4610 50  0000 C CNN
-F 1 "DFU" H 5200 4420 50  0000 C CNN
-F 2 "leia:KSR_TACTILE_SWITCH" H 5200 4500 60  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/1780692.pdf" H 5200 4500 60  0001 C CNN
-F 4 "C & K COMPONENTS" H 5200 4500 60  0001 C CNN "MFG Name"
-F 5 "KSR231G LFS" H 5200 4500 60  0001 C CNN "MFG Part Num"
-F 6 "1201422" H 5200 4500 60  0001 C CNN "Distrib PN"
-F 7 "Farnell" H 5200 4500 50  0001 C CNN "Distrib"
-F 8 "http://fr.farnell.com/c-k-components/ksr231g-lfs/tactile-commutateur-miniature/dp/1201422" H 5200 4500 60  0001 C CNN "Distrib Link"
-F 9 "Farnell" H 0   0   50  0001 C CNN "Distrib Name"
-	1    5200 4500
+P 1200 5000
+F 0 "SW503" H 1350 5110 50  0000 C CNN
+F 1 "DFU" H 1200 4920 50  0000 C CNN
+F 2 "leia:KSR_TACTILE_SWITCH" H 1200 5000 60  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1780692.pdf" H 1200 5000 60  0001 C CNN
+F 4 "C & K COMPONENTS" H 1200 5000 60  0001 C CNN "MFG Name"
+F 5 "KSR231G LFS" H 1200 5000 60  0001 C CNN "MFG Part Num"
+F 6 "1201422" H 1200 5000 60  0001 C CNN "Distrib PN"
+F 7 "Farnell" H 1200 5000 50  0001 C CNN "Distrib"
+F 8 "http://fr.farnell.com/c-k-components/ksr231g-lfs/tactile-commutateur-miniature/dp/1201422" H 1200 5000 60  0001 C CNN "Distrib Link"
+F 9 "Farnell" H -4000 500 50  0001 C CNN "Distrib Name"
+	1    1200 5000
 	0    -1   1    0   
 $EndComp
 $Comp
 L Device:R_Small R503
 U 1 1 58BDBDAB
-P 5200 5050
-F 0 "R503" V 5280 5050 50  0000 C CNN
-F 1 "10K" V 5200 5050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 5130 5050 30  0001 C CNN
-F 3 "" H 5200 5050 30  0000 C CNN
-F 4 "Farnell" H 0   0   50  0001 C CNN "Distrib"
-F 5 "Farnell" H 0   0   50  0001 C CNN "Distrib Name"
-F 6 "1738918" H 0   0   50  0001 C CNN "Distrib PN"
-F 7 "1738918" H 0   0   50  0001 C CNN "Distrib Part Num"
-F 8 "Vishay" H 0   0   50  0001 C CNN "MFG Name"
-F 9 "CRCW060310K0FKEAHP" H 0   0   50  0001 C CNN "MFG Part Num"
-	1    5200 5050
+P 1200 5550
+F 0 "R503" V 1280 5550 50  0000 C CNN
+F 1 "10K" V 1200 5550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1130 5550 30  0001 C CNN
+F 3 "" H 1200 5550 30  0000 C CNN
+F 4 "Farnell" H -4000 500 50  0001 C CNN "Distrib"
+F 5 "Farnell" H -4000 500 50  0001 C CNN "Distrib Name"
+F 6 "1738918" H -4000 500 50  0001 C CNN "Distrib PN"
+F 7 "1738918" H -4000 500 50  0001 C CNN "Distrib Part Num"
+F 8 "Vishay" H -4000 500 50  0001 C CNN "MFG Name"
+F 9 "CRCW060310K0FKEAHP" H -4000 500 50  0001 C CNN "MFG Part Num"
+	1    1200 5550
 	1    0    0    -1  
 $EndComp
-Text Label 5700 4850 0    60   ~ 0
+Text Label 1700 5350 0    60   ~ 0
 DFU
-Text Label 9050 7800 2    60   ~ 0
+Text Label 8950 5750 2    60   ~ 0
 DFU
 Text Notes 900  6450 0    60   ~ 0
 Boot0 = 0 \n	=> Flash memory aliased at 0x0000000 \n
@@ -579,8 +557,6 @@ Wire Wire Line
 Wire Wire Line
 	12600 6600 13550 6600
 Wire Wire Line
-	1450 4950 2050 4950
-Wire Wire Line
 	3150 4250 4200 4250
 Wire Wire Line
 	12600 9600 13250 9600
@@ -610,8 +586,6 @@ Wire Wire Line
 	8350 5100 8350 5900
 Wire Wire Line
 	8350 5900 9650 5900
-Wire Wire Line
-	9650 5750 8850 5750
 Connection ~ 7950 5700
 Connection ~ 7950 5100
 Wire Wire Line
@@ -697,8 +671,8 @@ Wire Wire Line
 Wire Wire Line
 	20250 4250 19500 4250
 Wire Wire Line
-	5200 4850 5700 4850
-Connection ~ 5200 4850
+	1200 5350 1700 5350
+Connection ~ 1200 5350
 Wire Wire Line
 	12600 8000 14300 8000
 Wire Wire Line
@@ -841,44 +815,8 @@ Text HLabel 7850 8800 0    50   Output ~ 0
 TRIGGER
 NoConn ~ 9650 8300
 NoConn ~ 12600 8800
-$Comp
-L Device:Jumper_NO_Small JP101
-U 1 1 5C4FF62B
-P 1450 5350
-F 0 "JP101" V 1404 5398 50  0000 L CNN
-F 1 "BOOT0" V 1495 5398 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1450 5350 50  0001 C CNN
-F 3 "~" H 1450 5350 50  0001 C CNN
-F 4 "Molex" V 1450 5350 50  0001 C CNN "MFG Name"
-F 5 "90120-0762" V 1450 5350 50  0001 C CNN "MFG Part Num"
-F 6 "2751456" V 1450 5350 50  0001 C CNN "Distrib PN"
-F 7 "Farnell" V 1450 5350 50  0001 C CNN "Distrib"
-F 8 "Farnell" H 0   0   50  0001 C CNN "Distrib Name"
-	1    1450 5350
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Jumper_NO_Small JP100
-U 1 1 5C5084C4
-P 1450 4600
-F 0 "JP100" V 1404 4648 50  0000 L CNN
-F 1 "BOOT1" V 1495 4648 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1450 4600 50  0001 C CNN
-F 3 "~" H 1450 4600 50  0001 C CNN
-F 4 "Molex" V 1450 4600 50  0001 C CNN "MFG Name"
-F 5 "90120-0762" V 1450 4600 50  0001 C CNN "MFG Part Num"
-F 6 "2751456" V 1450 4600 50  0001 C CNN "Distrib PN"
-F 7 "Farnell" V 1450 4600 50  0001 C CNN "Distrib"
-F 8 "Farnell" H 0   0   50  0001 C CNN "Distrib Name"
-	1    1450 4600
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	1450 4750 1450 4700
-Wire Wire Line
-	1450 4950 1450 5250
-Wire Wire Line
-	9650 7800 9050 7800
+	9650 5750 8950 5750
 NoConn ~ 12600 8700
 Wire Wire Line
 	12600 10100 13600 10100
@@ -899,17 +837,6 @@ Wire Wire Line
 Wire Wire Line
 	5000 2600 5000 2450
 $Comp
-L power:GNDD #PWR0128
-U 1 1 5C5A9F08
-P 1450 5900
-F 0 "#PWR0128" H 1450 5650 50  0001 C CNN
-F 1 "GNDD" H 1454 5745 50  0000 C CNN
-F 2 "" H 1450 5900 50  0001 C CNN
-F 3 "" H 1450 5900 50  0001 C CNN
-	1    1450 5900
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GNDD #PWR0129
 U 1 1 5C5B299B
 P 3300 5750
@@ -923,12 +850,12 @@ $EndComp
 $Comp
 L power:GNDD #PWR0131
 U 1 1 5C5BB295
-P 5200 5300
-F 0 "#PWR0131" H 5200 5050 50  0001 C CNN
-F 1 "GNDD" H 5204 5145 50  0000 C CNN
-F 2 "" H 5200 5300 50  0001 C CNN
-F 3 "" H 5200 5300 50  0001 C CNN
-	1    5200 5300
+P 1200 5800
+F 0 "#PWR0131" H 1200 5550 50  0001 C CNN
+F 1 "GNDD" H 1204 5645 50  0000 C CNN
+F 2 "" H 1200 5800 50  0001 C CNN
+F 3 "" H 1200 5800 50  0001 C CNN
+	1    1200 5800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1013,12 +940,12 @@ $EndComp
 $Comp
 L power:VDD #PWR0140
 U 1 1 5C6A853C
-P 5200 4100
-F 0 "#PWR0140" H 5200 3950 50  0001 C CNN
-F 1 "VDD" H 5217 4273 50  0000 C CNN
-F 2 "" H 5200 4100 50  0001 C CNN
-F 3 "" H 5200 4100 50  0001 C CNN
-	1    5200 4100
+P 1200 4600
+F 0 "#PWR0140" H 1200 4450 50  0001 C CNN
+F 1 "VDD" H 1217 4773 50  0000 C CNN
+F 2 "" H 1200 4600 50  0001 C CNN
+F 3 "" H 1200 4600 50  0001 C CNN
+	1    1200 4600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1080,7 +1007,6 @@ NoConn ~ 12600 5700
 NoConn ~ 9650 10000
 Wire Wire Line
 	7900 7500 9650 7500
-NoConn ~ 9650 7600
 NoConn ~ 9650 7900
 NoConn ~ 9650 8000
 $Comp
@@ -1261,12 +1187,6 @@ Wire Wire Line
 Wire Wire Line
 	1450 4200 1450 4150
 Wire Wire Line
-	1450 4400 1450 4500
-Wire Wire Line
-	1450 5450 1450 5550
-Wire Wire Line
-	1450 5750 1450 5900
-Wire Wire Line
 	2900 5050 2900 5300
 Wire Wire Line
 	2900 4450 2900 4850
@@ -1279,9 +1199,9 @@ Wire Wire Line
 Wire Wire Line
 	3500 4450 3500 4850
 Wire Wire Line
-	5200 4850 5200 4950
+	1200 5350 1200 5450
 Wire Wire Line
-	5200 5150 5200 5300
+	1200 5650 1200 5800
 Wire Wire Line
 	7950 5000 7950 5100
 Wire Wire Line
@@ -1296,11 +1216,18 @@ Wire Wire Line
 Wire Wire Line
 	7650 5600 7650 5700
 Wire Wire Line
-	5200 4100 5200 4300
+	1200 4600 1200 4800
 Wire Wire Line
-	5200 4700 5200 4850
+	1200 5200 1200 5350
 Wire Wire Line
 	9650 9500 8850 9500
 Text Label 8850 9500 0    60   ~ 0
 UART2_CARD_CLK
+Text HLabel 14400 6500 2    50   Output ~ 0
+CW_TRIG
+Wire Wire Line
+	12600 6500 14400 6500
+NoConn ~ 9650 7600
+Wire Wire Line
+	1450 4400 1450 4750
 $EndSCHEMATC
