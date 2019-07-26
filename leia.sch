@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
 LIBS:leia-cache
-LIBS:wookey-cache
 EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693

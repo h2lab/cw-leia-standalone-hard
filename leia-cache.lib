@@ -577,6 +577,26 @@ X Out1 6 450 100 200 L 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
+# leia_ASE-xxxMHz-Oscillator
+#
+DEF leia_ASE-xxxMHz-Oscillator X 0 10 Y Y 1 F N
+F0 "X" -400 250 50 H V L CNN
+F1 "leia_ASE-xxxMHz-Oscillator" 50 -250 50 H V L CNN
+F2 "Oscillator:Oscillator_SMD_Abracon_ASE-4Pin_3.2x2.5mm" 700 -350 50 H I C CNN
+F3 "" -100 0 50 H I C CNN
+$FPLIST
+ Oscillator*SMD*Abracon*ASE*3.2x2.5mm*
+$ENDFPLIST
+DRAW
+S -400 200 200 -200 0 1 10 f
+P 10 0 1 0 -150 -30 -140 -30 -140 30 -120 30 -120 -30 -100 -30 -100 30 -80 30 -80 -30 -70 -30 N
+X STBY 1 -500 0 100 R 50 50 1 1 I
+X GND 2 -100 -300 100 U 50 50 1 1 W
+X OUT 3 300 0 100 L 50 50 1 1 O
+X Vdd 4 -100 300 100 D 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
 # leia_ISO7816_NO
 #
 DEF leia_ISO7816_NO P 0 40 Y Y 1 F N

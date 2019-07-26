@@ -1,4 +1,4 @@
-PROJ_NAME = Leia
+PROJ_NAME = leia
 PCB_PATH = .
 PCB_FILE = $(PROJ_NAME).kicad_pcb
 PCB_FILE_PATH = $(PCB_PATH)/$(PCB_FILE)
