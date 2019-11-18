@@ -121,8 +121,6 @@ Text Label 15150 4900 2    50   ~ 0
 CW_PWR
 Text Label 15200 7200 2    50   ~ 0
 CW_GND
-Wire Wire Line
-	14750 7200 15200 7200
 Connection ~ 7250 10100
 Text Label 6700 4100 2    50   ~ 0
 USB_READER_GND
@@ -381,8 +379,6 @@ Text Label 12050 3600 0    50   ~ 0
 TX_CMD
 Wire Wire Line
 	14000 3800 14100 3800
-Wire Wire Line
-	14100 3500 14750 3500
 Wire Wire Line
 	11900 4950 11900 3600
 Wire Wire Line
@@ -839,8 +835,6 @@ Wire Wire Line
 Wire Wire Line
 	14100 4650 14100 3800
 Connection ~ 14100 3800
-Wire Wire Line
-	14100 3800 14750 3800
 Text Label 14200 3500 0    50   ~ 0
 VDD_CMD
 Text Label 14200 3800 0    50   ~ 0
@@ -964,8 +958,6 @@ Wire Wire Line
 	15500 4150 15500 3600
 Text Label 14900 5400 0    50   ~ 0
 VDD_CMD
-Wire Wire Line
-	14750 5400 14900 5400
 Text Label 14750 8150 0    50   ~ 0
 GND_CMD
 Text Label 14750 7850 0    50   ~ 0
@@ -1140,4 +1132,16 @@ Wire Wire Line
 	12600 4150 15500 4150
 Wire Wire Line
 	12700 4050 15400 4050
+Wire Wire Line
+	14100 3500 15600 3500
+Wire Wire Line
+	14750 5400 15600 5400
+Wire Wire Line
+	15600 3500 15600 5400
+Wire Wire Line
+	15700 7200 15700 3800
+Wire Wire Line
+	14100 3800 15700 3800
+Wire Wire Line
+	14750 7200 15700 7200
 $EndSCHEMATC

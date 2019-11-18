@@ -14,7 +14,7 @@ Comment2 "LICENCE: CERN Open Hardware Licence v1.2"
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 2450 4650 0    60   ~ 0
+Text Label 2750 5300 0    60   ~ 0
 BOOT1
 $Comp
 L Device:LED_ALT D111
@@ -467,7 +467,7 @@ F 9 "CRCW060310K0FKEAHP" H -3100 400 50  0001 C CNN "MFG Part Num"
 	1    2100 5450
 	1    0    0    -1  
 $EndComp
-Text Label 2600 5250 0    60   ~ 0
+Text Label 2750 5100 0    60   ~ 0
 DFU
 Text Label 9850 5650 2    60   ~ 0
 DFU
@@ -653,7 +653,7 @@ Wire Wire Line
 Wire Wire Line
 	4400 4350 5100 4350
 Wire Wire Line
-	2350 4650 2950 4650
+	2350 5300 2750 5300
 Wire Notes Line
 	22000 6800 22000 2000
 Wire Notes Line
@@ -669,8 +669,8 @@ Wire Wire Line
 Wire Wire Line
 	21150 4150 20400 4150
 Wire Wire Line
-	2100 5250 2600 5250
-Connection ~ 2100 5250
+	2100 5100 2750 5100
+Connection ~ 2100 5100
 Wire Wire Line
 	13500 7900 15200 7900
 Wire Wire Line
@@ -925,17 +925,6 @@ F 3 "" H 12450 11550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VDD #PWR0139
-U 1 1 5C6A7F4D
-P 2350 4050
-F 0 "#PWR0139" H 2350 3900 50  0001 C CNN
-F 1 "VDD" H 2367 4223 50  0000 C CNN
-F 2 "" H 2350 4050 50  0001 C CNN
-F 3 "" H 2350 4050 50  0001 C CNN
-	1    2350 4050
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:VDD #PWR0140
 U 1 1 5C6A853C
 P 2100 4500
@@ -987,18 +976,18 @@ NoConn ~ 13500 5800
 $Comp
 L Device:R_Small R100
 U 1 1 557FEE42
-P 2350 4200
-F 0 "R100" V 2430 4200 50  0000 C CNN
-F 1 "10K" V 2350 4200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2280 4200 30  0001 C CNN
-F 3 "" H 2350 4200 30  0000 C CNN
-F 4 "Farnell" H 900 -100 50  0001 C CNN "Distrib"
-F 5 "Farnell" H 900 -100 50  0001 C CNN "Distrib Name"
-F 6 "1738918" H 900 -100 50  0001 C CNN "Distrib PN"
-F 7 "1738918" H 900 -100 50  0001 C CNN "Distrib Part Num"
-F 8 "Vishay" H 900 -100 50  0001 C CNN "MFG Name"
-F 9 "CRCW060310K0FKEAHP" H 900 -100 50  0001 C CNN "MFG Part Num"
-	1    2350 4200
+P 2350 5450
+F 0 "R100" V 2430 5450 50  0000 C CNN
+F 1 "10K" V 2350 5450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2280 5450 30  0001 C CNN
+F 3 "" H 2350 5450 30  0000 C CNN
+F 4 "Farnell" H 900 1150 50  0001 C CNN "Distrib"
+F 5 "Farnell" H 900 1150 50  0001 C CNN "Distrib Name"
+F 6 "1738918" H 900 1150 50  0001 C CNN "Distrib PN"
+F 7 "1738918" H 900 1150 50  0001 C CNN "Distrib Part Num"
+F 8 "Vishay" H 900 1150 50  0001 C CNN "MFG Name"
+F 9 "CRCW060310K0FKEAHP" H 900 1150 50  0001 C CNN "MFG Part Num"
+	1    2350 5450
 	1    0    0    -1  
 $EndComp
 NoConn ~ 13500 5600
@@ -1180,7 +1169,7 @@ Wire Wire Line
 Wire Wire Line
 	7900 5000 8550 5000
 Wire Wire Line
-	2350 4100 2350 4050
+	2350 5350 2350 5300
 Wire Wire Line
 	3800 4950 3800 5200
 Wire Wire Line
@@ -1194,9 +1183,9 @@ Wire Wire Line
 Wire Wire Line
 	4400 4350 4400 4750
 Wire Wire Line
-	2100 5250 2100 5350
+	2100 5100 2100 5350
 Wire Wire Line
-	2100 5550 2100 5700
+	2100 5550 2100 5650
 Wire Wire Line
 	8850 4900 8850 5000
 Wire Wire Line
@@ -1212,14 +1201,10 @@ Wire Wire Line
 	8550 5500 8550 5600
 Wire Wire Line
 	2100 4500 2100 4700
-Wire Wire Line
-	2100 5100 2100 5250
 Text HLabel 15300 6400 2    50   Output ~ 0
 CW_TRIG
 Wire Wire Line
 	13500 6400 15300 6400
-Wire Wire Line
-	2350 4300 2350 4650
 Wire Wire Line
 	10550 7500 9650 7500
 Text Notes 6950 7600 0    50   ~ 0
@@ -1339,4 +1324,11 @@ F 3 "" H 6700 6600 50  0001 C CNN
 	1    6700 6600
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2100 5650 2350 5650
+Wire Wire Line
+	2350 5650 2350 5550
+Connection ~ 2100 5650
+Wire Wire Line
+	2100 5650 2100 5700
 $EndSCHEMATC
