@@ -1,10 +1,9 @@
-EESchema Schematic File Version 4
-LIBS:leia-cache
-EELAYER 29 0
+EESchema Schematic File Version 5
+EELAYER 34 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 5 5
+Sheet 4 5
 Title "CW-LEIA"
 Date "2016-28-20"
 Rev "0.2"
@@ -13,35 +12,17 @@ Comment1 "Designed by Mathieu RENARD"
 Comment2 "LICENCE: CERN Open Hardware Licence v1.2"
 Comment3 ""
 Comment4 ""
+Comment5 ""
+Comment6 ""
+Comment7 ""
+Comment8 ""
+Comment9 ""
 $EndDescr
-Text Label -16800 27400 0    81   ~ 0
-ear
-Wire Notes Line
-	19600 14600 22500 14600
-Text HLabel 3650 7600 0    50   Input ~ 0
-RX
-Text HLabel 3650 7500 0    50   Output ~ 0
-TX
-Wire Wire Line
-	3650 7600 4750 7600
-Wire Wire Line
-	3650 7500 4750 7500
-Text Label 4750 7500 0    50   ~ 0
-TX
-Text Label 4750 7600 0    50   ~ 0
-RX
-Wire Wire Line
-	13100 7200 14300 7200
-Wire Wire Line
-	13100 7500 14300 7500
-Text Label 14300 7100 0    50   ~ 0
-CW308_1.2
-Text Label 14300 7200 0    50   ~ 0
-CW308_1.8
-Text Label 14300 7400 0    50   ~ 0
-CW308_3.3
-Text Label 14300 7500 0    50   ~ 0
-CW308_5.0
+Connection ~ 13050 4850
+Connection ~ 13050 4950
+Connection ~ 13050 5050
+Connection ~ 13050 5150
+Connection ~ 13050 5250
 NoConn ~ 12300 8850
 NoConn ~ 12400 8850
 NoConn ~ 12500 8850
@@ -56,52 +37,6 @@ NoConn ~ 10600 6100
 NoConn ~ 11000 8850
 NoConn ~ 11100 8850
 NoConn ~ 11200 8850
-Text Label 11100 5250 0    50   ~ 0
-CW308_1.2
-Text Label 11100 5150 0    50   ~ 0
-CW308_1.8
-Text Label 11100 4950 0    50   ~ 0
-CW308_3.3
-Text Label 11100 4850 0    50   ~ 0
-CW308_5.0
-Text HLabel 4450 6600 0    50   UnSpc ~ 0
-TARGET_GND
-Wire Wire Line
-	4450 6600 4700 6600
-Wire Wire Line
-	11700 5150 11100 5150
-Wire Wire Line
-	11700 5050 11100 5050
-Wire Wire Line
-	11700 4950 11100 4950
-Wire Wire Line
-	11700 4850 11100 4850
-Text Label 11100 5050 0    50   ~ 0
-CW308_2.5
-Wire Wire Line
-	13100 7100 14300 7100
-$Comp
-L power:VCOM #PWR0125
-U 1 1 5C6F92F0
-P 13050 4000
-F 0 "#PWR0125" H 13050 3850 50  0001 C CNN
-F 1 "VCOM" H 13067 4173 50  0000 C CNN
-F 2 "" H 13050 4000 50  0001 C CNN
-F 3 "" H 13050 4000 50  0001 C CNN
-	1    13050 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0126
-U 1 1 5C6FCDA8
-P 4700 6750
-F 0 "#PWR0126" H 4700 6500 50  0001 C CNN
-F 1 "GND" H 4705 6577 50  0000 C CNN
-F 2 "" H 4700 6750 50  0001 C CNN
-F 3 "" H 4700 6750 50  0001 C CNN
-	1    4700 6750
-	1    0    0    -1  
-$EndComp
 NoConn ~ 11700 8850
 NoConn ~ 11800 8850
 NoConn ~ 12000 8850
@@ -115,104 +50,7 @@ NoConn ~ 13100 6700
 NoConn ~ 13100 6900
 NoConn ~ 13100 7000
 NoConn ~ 13100 7600
-Wire Wire Line
-	13100 7400 14300 7400
-$Comp
-L wisp:CW308_TARGETCON J6000
-U 1 1 5C2850A5
-P 11800 7000
-F 0 "J6000" H 12050 8165 50  0000 C CNN
-F 1 "CW308_TARGETCON" H 12050 8074 50  0000 C CNN
-F 2 "leia:CW308T_CONNBOARD" H 11800 7000 50  0001 C CNN
-F 3 "" H 11800 7000 50  0001 C CNN
-	1    11800 7000
-	1    0    0    -1  
-$EndComp
-Text HLabel 4400 6300 0    50   UnSpc ~ 0
-TARGET_PWR
-$Comp
-L Connector_Generic:Conn_02x06_Odd_Even J6200
-U 1 1 5C47892C
-P 11900 5050
-F 0 "J6200" H 11950 5467 50  0000 C CNN
-F 1 "CW_PWR" H 11950 5376 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 11900 5050 50  0001 C CNN
-F 3 "~" H 11900 5050 50  0001 C CNN
-F 4 "Molex" H 11900 5050 50  0001 C CNN "MFG Name"
-F 5 "90131-0766" H 11900 5050 50  0001 C CNN "MFG Part Num"
-F 6 "WM8142-ND" H 11900 5050 50  0001 C CNN "Distrib PN"
-F 7 "Digi-key" H 11900 5050 50  0001 C CNN "Distrib"
-F 8 "Digi-key" H -5250 -1950 50  0001 C CNN "Distrib Name"
-	1    11900 5050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12200 5350 13050 5350
-Wire Wire Line
-	12200 5250 13050 5250
-Wire Wire Line
-	12200 5150 13050 5150
-Wire Wire Line
-	12200 5050 13050 5050
-Wire Wire Line
-	12200 4950 13050 4950
-Wire Wire Line
-	12200 4850 13050 4850
-Wire Wire Line
-	13050 5350 13050 5250
-Wire Wire Line
-	4700 6300 4400 6300
-Connection ~ 13050 4850
-Connection ~ 13050 4950
-Wire Wire Line
-	13050 4950 13050 4850
-Connection ~ 13050 5050
-Wire Wire Line
-	13050 5050 13050 4950
-Connection ~ 13050 5150
-Wire Wire Line
-	13050 5150 13050 5050
-Connection ~ 13050 5250
-Wire Wire Line
-	13050 5250 13050 5150
-Wire Wire Line
-	13100 7300 14300 7300
-Text Label 14300 7300 0    50   ~ 0
-CW308_2.5
-Wire Wire Line
-	11100 5250 11700 5250
 NoConn ~ 11700 5350
-Wire Wire Line
-	10600 6700 8300 6700
-Wire Wire Line
-	10600 6800 8300 6800
-Text Label 8300 6700 0    50   ~ 0
-TX
-Text Label 8300 6800 0    50   ~ 0
-RX
-Text Label 4750 7700 0    50   ~ 0
-VREF
-Text HLabel 3650 7700 0    50   Input ~ 0
-VREF
-Wire Wire Line
-	3650 7700 4750 7700
-Wire Wire Line
-	13050 4000 13050 4850
-Wire Wire Line
-	4700 6300 4700 6150
-$Comp
-L power:VCOM #PWR0117
-U 1 1 5CA3DE16
-P 4700 6150
-F 0 "#PWR0117" H 4700 6000 50  0001 C CNN
-F 1 "VCOM" H 4717 6323 50  0000 C CNN
-F 2 "" H 4700 6150 50  0001 C CNN
-F 3 "" H 4700 6150 50  0001 C CNN
-	1    4700 6150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4700 6600 4700 6750
 NoConn ~ 13100 7800
 NoConn ~ 13100 7900
 NoConn ~ 13100 8000
@@ -233,60 +71,186 @@ NoConn ~ 12100 8850
 NoConn ~ 13100 6200
 NoConn ~ 13100 6300
 NoConn ~ 10900 8850
-$Comp
-L leia-rescue:GND #PWR0118
-U 1 1 5D03631E
-P 13650 6500
-F 0 "#PWR0118" H 13650 6250 50  0001 C CNN
-F 1 "GND" H 13650 6350 50  0000 C CNN
-F 2 "" H 13650 6500 60  0000 C CNN
-F 3 "" H 13650 6500 60  0000 C CNN
-	1    13650 6500
-	1    0    0    -1  
-$EndComp
+NoConn ~ 13100 7700
 Wire Wire Line
-	13100 6400 13650 6400
+	3650 7500 4750 7500
 Wire Wire Line
-	13650 6400 13650 6500
-Text Label 10050 8000 0    50   ~ 0
-VREF
+	3650 7600 4750 7600
+Wire Wire Line
+	3650 7700 4750 7700
+Wire Wire Line
+	4450 6600 4950 6600
+Wire Wire Line
+	4700 6300 4400 6300
+Wire Wire Line
+	4700 6300 4700 6150
+Wire Wire Line
+	4750 7400 3650 7400
+Wire Wire Line
+	10600 6700 8300 6700
+Wire Wire Line
+	10600 6800 8300 6800
+Wire Wire Line
+	10600 7000 8300 7000
+Wire Wire Line
+	10600 7600 10050 7600
 Wire Wire Line
 	10600 8000 10050 8000
 Wire Wire Line
-	10600 7000 8300 7000
-Text Label 8300 7000 0    50   ~ 0
-CW_TRIG
-Text Label 4750 7400 0    50   ~ 0
-CW_TRIG
+	11100 5250 11700 5250
 Wire Wire Line
-	4750 7400 3650 7400
-Text HLabel 3650 7400 0    50   Input ~ 0
-CW_TRIG
-NoConn ~ 13100 7700
-$Comp
-L power:GND #PWR0122
-U 1 1 5D0B3DF2
-P 13650 6800
-F 0 "#PWR0122" H 13650 6550 50  0001 C CNN
-F 1 "GND" H 13655 6627 50  0000 C CNN
-F 2 "" H 13650 6800 50  0001 C CNN
-F 3 "" H 13650 6800 50  0001 C CNN
-	1    13650 6800
-	1    0    0    -1  
-$EndComp
+	11700 4850 11100 4850
+Wire Wire Line
+	11700 4950 11100 4950
+Wire Wire Line
+	11700 5050 11100 5050
+Wire Wire Line
+	11700 5150 11100 5150
+Wire Wire Line
+	12200 4850 13050 4850
+Wire Wire Line
+	12200 4950 13050 4950
+Wire Wire Line
+	12200 5050 13050 5050
+Wire Wire Line
+	12200 5150 13050 5150
+Wire Wire Line
+	12200 5250 13050 5250
+Wire Wire Line
+	12200 5350 13050 5350
+Wire Wire Line
+	13050 4000 13050 4850
+Wire Wire Line
+	13050 4950 13050 4850
+Wire Wire Line
+	13050 5050 13050 4950
+Wire Wire Line
+	13050 5150 13050 5050
+Wire Wire Line
+	13050 5250 13050 5150
+Wire Wire Line
+	13050 5350 13050 5250
+Wire Wire Line
+	13100 6400 13650 6400
 Wire Wire Line
 	13100 6800 13650 6800
 Wire Wire Line
-	10600 7600 10050 7600
+	13100 7100 14300 7100
+Wire Wire Line
+	13100 7200 14300 7200
+Wire Wire Line
+	13100 7300 14300 7300
+Wire Wire Line
+	13100 7400 14300 7400
+Wire Wire Line
+	13100 7500 14300 7500
+Wire Notes Line
+	19600 14600 22500 14600
+Text Label -16800 27400 0    81   ~ 0
+ear
+Text Label 4750 7400 0    50   ~ 0
+CW_TRIG
+Text Label 4750 7500 0    50   ~ 0
+TX
+Text Label 4750 7600 0    50   ~ 0
+RX
+Text Label 4750 7700 0    50   ~ 0
+VREF
+Text Label 4950 6600 2    50   ~ 0
+GND_CMD
+Text Label 8300 6700 0    50   ~ 0
+TX
+Text Label 8300 6800 0    50   ~ 0
+RX
+Text Label 8300 7000 0    50   ~ 0
+CW_TRIG
+Text Label 10050 7600 0    50   ~ 0
+GND_CMD
+Text Label 10050 8000 0    50   ~ 0
+VREF
+Text Label 11100 4850 0    50   ~ 0
+CW308_5.0
+Text Label 11100 4950 0    50   ~ 0
+CW308_3.3
+Text Label 11100 5050 0    50   ~ 0
+CW308_2.5
+Text Label 11100 5150 0    50   ~ 0
+CW308_1.8
+Text Label 11100 5250 0    50   ~ 0
+CW308_1.2
+Text Label 13650 6400 2    50   ~ 0
+GND_CMD
+Text Label 13650 6800 2    50   ~ 0
+GND_CMD
+Text Label 14300 7100 0    50   ~ 0
+CW308_1.2
+Text Label 14300 7200 0    50   ~ 0
+CW308_1.8
+Text Label 14300 7300 0    50   ~ 0
+CW308_2.5
+Text Label 14300 7400 0    50   ~ 0
+CW308_3.3
+Text Label 14300 7500 0    50   ~ 0
+CW308_5.0
+Text HLabel 3650 7400 0    50   Input ~ 0
+CW_TRIG
+Text HLabel 3650 7500 0    50   Output ~ 0
+TX
+Text HLabel 3650 7600 0    50   Input ~ 0
+RX
+Text HLabel 3650 7700 0    50   Input ~ 0
+VREF
+Text HLabel 4400 6300 0    50   UnSpc ~ 0
+TARGET_PWR
+Text HLabel 4450 6600 0    50   UnSpc ~ 0
+TARGET_GND
 $Comp
-L power:GND #PWR0154
-U 1 1 5D44EF88
-P 10050 7600
-F 0 "#PWR0154" H 10050 7350 50  0001 C CNN
-F 1 "GND" H 10055 7427 50  0000 C CNN
-F 2 "" H 10050 7600 50  0001 C CNN
-F 3 "" H 10050 7600 50  0001 C CNN
-	1    10050 7600
+L power:VCOM #PWR0117
+U 1 1 5CA3DE16
+P 4700 6150
+F 0 "#PWR0117" H 4700 6000 50  0001 C CNN
+F 1 "VCOM" H 4717 6323 50  0000 C CNN
+F 2 "" H 4700 6150 50  0001 C CNN
+F 3 "" H 4700 6150 50  0001 C CNN
+	1    4700 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCOM #PWR0125
+U 1 1 5C6F92F0
+P 13050 4000
+F 0 "#PWR0125" H 13050 3850 50  0001 C CNN
+F 1 "VCOM" H 13067 4173 50  0000 C CNN
+F 2 "" H 13050 4000 50  0001 C CNN
+F 3 "" H 13050 4000 50  0001 C CNN
+	1    13050 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J6200
+U 1 1 5C47892C
+P 11900 5050
+F 0 "J6200" H 11950 5467 50  0000 C CNN
+F 1 "CW_PWR" H 11950 5376 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 11900 5050 50  0001 C CNN
+F 3 "~" H 11900 5050 50  0001 C CNN
+F 4 "Molex" H 11900 5050 50  0001 C CNN "MFG Name"
+F 5 "90131-0766" H 11900 5050 50  0001 C CNN "MFG Part Num"
+F 6 "WM8142-ND" H 11900 5050 50  0001 C CNN "Distrib PN"
+F 7 "Digi-key" H 11900 5050 50  0001 C CNN "Distrib"
+F 8 "Digi-key" H -5250 -1950 50  0001 C CNN "Distrib Name"
+	1    11900 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L wisp:CW308_TARGETCON J6000
+U 1 1 5C2850A5
+P 11800 7000
+F 0 "J6000" H 12050 8165 50  0000 C CNN
+F 1 "CW308_TARGETCON" H 12050 8074 50  0000 C CNN
+F 2 "leia:CW308T_CONNBOARD" H 11800 7000 50  0001 C CNN
+F 3 "" H 11800 7000 50  0001 C CNN
+	1    11800 7000
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
