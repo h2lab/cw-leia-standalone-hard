@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CW-20Pins
+D Chipwisperer 20 pins connector double row, 02x10, odd/even pin numbering
+K connector Chipwisperer CW
+F ~
+$ENDCMP
+#
+#End Doc Library
