@@ -1,4 +1,4 @@
-update=Tuesday, June 02, 2020 at 07:45:52 pm
+update=Wednesday, June 03, 2020 at 12:50:13 am
 version=1
 last_client=kicad
 [general]
@@ -22,10 +22,10 @@ SpiceAjustPassiveValues=0
 LabSize=50
 ERC_TestSimilarLabels=1
 [sheetnames]
-1=00000000-0000-0000-0000-00005ed6328c:
-2=00000000-0000-0000-0000-00005b064c30:usb
+1=00000000-0000-0000-0000-00005ed7cc64:
+2=00000000-0000-0000-0000-00005b19b666:iface_ufo
 3=00000000-0000-0000-0000-00005b22b7cd:cpu
-4=00000000-0000-0000-0000-00005b19b666:iface_ufo
+4=00000000-0000-0000-0000-00005b064c30:usb
 5=00000000-0000-0000-0000-00005b19b7b2:dfu smartcard
 [pcbnew]
 version=1

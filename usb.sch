@@ -3,7 +3,7 @@ EELAYER 34 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 2 5
+Sheet 3 5
 Title "CW-LEIA"
 Date "2016-28-20"
 Rev "0.2"

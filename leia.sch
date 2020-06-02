@@ -45,8 +45,6 @@ Connection ~ 14600 8150
 Connection ~ 14100 3500
 Connection ~ 14000 3800
 Connection ~ 13850 3500
-Connection ~ 13850 4050
-Connection ~ 13850 4150
 NoConn ~ 13300 9250
 NoConn ~ 4450 9800
 NoConn ~ 4450 8700
@@ -252,9 +250,9 @@ Wire Wire Line
 Wire Wire Line
 	12550 3600 12650 3700
 Wire Wire Line
-	12600 4150 12600 5050
+	12600 4200 12600 5050
 Wire Wire Line
-	12600 4150 13850 4150
+	12600 4200 15500 4200
 Wire Wire Line
 	12600 5050 12900 5050
 Wire Wire Line
@@ -270,21 +268,15 @@ Wire Wire Line
 Wire Wire Line
 	12700 3100 12700 3250
 Wire Wire Line
-	12700 4050 13850 4050
+	12700 4150 15400 4150
 Wire Wire Line
-	12700 4950 12700 4050
+	12700 4950 12700 4150
 Wire Wire Line
 	12800 8150 12800 8450
-Wire Wire Line
-	12850 1450 12050 1450
 Wire Wire Line
 	12900 3500 12350 3500
 Wire Wire Line
 	12900 4950 12700 4950
-Wire Wire Line
-	13050 1650 13050 1900
-Wire Wire Line
-	13050 1900 12050 1900
 Wire Wire Line
 	13200 7850 12450 7850
 Wire Wire Line
@@ -304,13 +296,9 @@ Wire Wire Line
 Wire Wire Line
 	13850 3500 14100 3500
 Wire Wire Line
-	13850 4050 13850 4150
+	13850 4050 13850 4250
 Wire Wire Line
-	13850 4050 15400 4050
-Wire Wire Line
-	13850 4150 15500 4150
-Wire Wire Line
-	13850 4450 13850 4650
+	13850 4550 13850 4650
 Wire Wire Line
 	13850 4650 14100 4650
 Wire Wire Line
@@ -350,11 +338,11 @@ Wire Wire Line
 Wire Wire Line
 	14750 7200 15700 7200
 Wire Wire Line
-	15400 3700 15400 4050
+	15400 3700 15400 4150
 Wire Wire Line
 	15450 6600 15450 8050
 Wire Wire Line
-	15500 4150 15500 3600
+	15500 4200 15500 3600
 Wire Wire Line
 	15600 3500 15600 5400
 Wire Wire Line
@@ -410,7 +398,7 @@ EXT_READER_GND
 Text Label 6300 1050 0    50   ~ 0
 USB_READER_VCC
 Text Label 6300 1250 0    50   ~ 0
-EXT_READER_VCC
+CW_PWR
 Text Label 6350 4800 2    50   ~ 0
 VDDD
 Text Label 6500 6850 2    50   ~ 0
@@ -419,10 +407,6 @@ Text Label 6700 4100 2    50   ~ 0
 USB_READER_GND
 Text Label 7300 10100 0    50   ~ 0
 GNDD
-Text Label 12050 1450 0    50   ~ 0
-EXT_READER_VCC
-Text Label 12050 1900 0    50   ~ 0
-EXT_READER_GND
 Text Label 12050 3600 0    50   ~ 0
 TX_CMD
 Text Label 12050 3700 0    50   ~ 0
@@ -804,7 +788,7 @@ AR Path="/5B19B7B2/5CFF7179" Ref="R?"  Part="1"
 AR Path="/5CBC3017/5B19B7B2/5CFF7179" Ref="R?"  Part="1" 
 AR Path="/5CFF7179" Ref="R1002"  Part="1" 
 F 0 "R1002" V 13930 3950 50  0000 C CNN
-F 1 "470" V 13850 3950 50  0000 C CNN
+F 1 "470" V 14000 3950 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 13780 3950 30  0001 C CNN
 F 3 "" H 13850 3950 30  0000 C CNN
 F 4 "Farnell" H 10350 -1000 50  0001 C CNN "Distrib"
@@ -935,22 +919,22 @@ $EndComp
 $Comp
 L Device:LED_ALT D?
 U 1 1 5CFF716D
-P 13850 4300
+P 13850 4400
 AR Path="/5B22B7CD/5CFF716D" Ref="D?"  Part="1" 
 AR Path="/5B19B7B2/5CFF716D" Ref="D?"  Part="1" 
 AR Path="/5CBC3017/5B19B7B2/5CFF716D" Ref="D?"  Part="1" 
 AR Path="/5CFF716D" Ref="D1001"  Part="1" 
-F 0 "D1001" H 13850 4400 50  0000 C CNN
-F 1 "VDDA" H 13850 4200 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 13850 4300 60  0001 C CNN
-F 3 "" H 13850 4300 60  0000 C CNN
-F 4 "Vishay" H 13850 4300 50  0001 C CNN "MFG Name"
-F 5 "TLMS1100-GS08.." H 13850 4300 50  0001 C CNN "MFG Part Num"
-F 6 "1440338" H 13850 4300 50  0001 C CNN "Distrib PN"
-F 7 "https://fr.farnell.com/vishay/tlms1100-gs08/led-red-1-6mm-x-0-8mm-63mcd-633nm/dp/1440338" H 13850 4300 50  0001 C CNN "Distrib Link"
-F 8 "Farnell" H 13850 4300 50  0001 C CNN "Distrib"
-F 9 "Farnell" H 10350 -1150 50  0001 C CNN "Distrib Name"
-	1    13850 4300
+F 0 "D1001" H 13850 4500 50  0000 C CNN
+F 1 "VDD_CMD" H 13850 4300 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Castellated" H 13850 4400 60  0001 C CNN
+F 3 "" H 13850 4400 60  0000 C CNN
+F 4 "Vishay" H 13850 4400 50  0001 C CNN "MFG Name"
+F 5 "TLMS1100-GS08.." H 13850 4400 50  0001 C CNN "MFG Part Num"
+F 6 "1440338" H 13850 4400 50  0001 C CNN "Distrib PN"
+F 7 "https://fr.farnell.com/vishay/tlms1100-gs08/led-red-1-6mm-x-0-8mm-63mcd-633nm/dp/1440338" H 13850 4400 50  0001 C CNN "Distrib Link"
+F 8 "Farnell" H 13850 4400 50  0001 C CNN "Distrib"
+F 9 "Farnell" H 10350 -1050 50  0001 C CNN "Distrib Name"
+	1    13850 4400
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -996,24 +980,6 @@ F 9 "Farnell" H -7500 4900 50  0001 C CNN "Distrib Name"
 F 10 "2112467" H -7500 4900 50  0001 C CNN "Distrib PN"
 	1    5800 9300
 	0    1    1    0   
-$EndComp
-$Comp
-L Connector:Conn_Coaxial J6
-U 1 1 5C3E3023
-P 13050 1450
-F 0 "J6" H 13150 1425 50  0000 L CNN
-F 1 "EXT_READER_VCC" H 13150 1334 50  0000 L CNN
-F 2 "Connector_Coaxial:SMA_Amphenol_132289_EdgeMount" H 13050 1450 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/1681616.pdf" H 13050 1450 50  0001 C CNN
-F 4 "AMPHENOL CONNEX" H 13050 1450 50  0001 C CNN "MFG Name"
-F 5 "132289" H 13050 1450 50  0001 C CNN "MFG Part Num"
-F 6 "Farnell" H 13050 1450 50  0001 C CNN "Distrib"
-F 7 "2112467" H 13050 1450 50  0001 C CNN "Distrib Part Num"
-F 8 "https://fr.farnell.com/amphenol-connex/132289/sma-jack-50ohm-bulkhead/dp/2112467?st=132289" H -1900 -100 50  0001 C CNN "Distrib Link"
-F 9 "Farnell" H -1900 -100 50  0001 C CNN "Distrib Name"
-F 10 "2112467" H -1900 -100 50  0001 C CNN "Distrib PN"
-	1    13050 1450
-	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_02x03_Odd_Even J?

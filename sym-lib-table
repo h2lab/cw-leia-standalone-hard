@@ -1,7 +1,8 @@
 (sym_lib_table
-  (lib (name leia-rescue)(type Legacy)(uri ${KIPRJMOD}/libs/wookey/wookey-rescue.lib)(options "")(descr ""))
-  (lib (name leia)(type Legacy)(uri ${KIPRJMOD}/libs/wookey/wookey.lib)(options "")(descr ""))
-  (lib (name optos)(type Legacy)(uri ${KIPRJMOD}/libs/leia/optos.lib)(options "")(descr ""))
-  (lib (name mux)(type Legacy)(uri ${KIPRJMOD}/libs/leia/mux.lib)(options "")(descr ""))
-  (lib (name wisp)(type Legacy)(uri ${KIPRJMOD}/libs/leia/wisp.lib)(options "")(descr ""))
+  (lib (name "leia-rescue")(type "Legacy")(uri "${KIPRJMOD}/libs/wookey/wookey-rescue.lib")(options "")(descr ""))
+  (lib (name "leia")(type "Legacy")(uri "${KIPRJMOD}/libs/wookey/wookey.lib")(options "")(descr ""))
+  (lib (name "optos")(type "Legacy")(uri "${KIPRJMOD}/libs/leia/optos.lib")(options "")(descr ""))
+  (lib (name "mux")(type "Legacy")(uri "${KIPRJMOD}/libs/leia/mux.lib")(options "")(descr ""))
+  (lib (name "wisp")(type "Legacy")(uri "${KIPRJMOD}/libs/leia/wisp.lib")(options "")(descr ""))
+  (lib (name "cw-20pins")(type "Legacy")(uri "${KIPRJMOD}/libs/leia/cw-20pins.lib")(options "")(descr ""))
 )
